@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif; /* Using Arial font for better readability */
+    margin: 0;
+}
+
+.video-text-section{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-text,.video-section{
+    flex: 1;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    text-transform: capitalize
+}
+
+.header-content {
+    margin-right: 20px;
+    font-size: 50px;
+    padding-left: 8%;
+    font-family: "CustomFont", Arial, sans-serif;
+    color: #edebe7f4;
+    padding-top: 5%;
+    text-shadow: -1px -1px 0 rgb(170, 130, 0),  
+                  1px -1px 0 rgb(170, 130, 0),
+                 -1px 1px 0 rgb(170, 130, 0),
+                  1px 1px 0 rgb(170, 130, 0); /* Creates an outline effect */
+}
+
+
+.head{
+    padding-left: 7%;
+    font-style: italic;
+    font-size: 45px;
+}
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    object-fit: cover;
+    object-position: right;
+    width: 50%;
+}
+
+.divider {
+    border-top: 2px dashed #ebe3e3; /* Dashed border with black color */
+}
+
+/* About section styles */
+.about {
+    padding: 30px;
+    color: whites;
+}
+
+/* Background section styles */
+.background {
+    padding: 5%;
+    text-align: center;
+    font-size: 100px;
+}
+
+.background ul, .background li {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* Video section styles */
+.video-section {
+    padding: 10px;
+    display: flex; /* Use flexbox */
+    justify-content: right; /* Center align horizontally */
+    align-items: right; /* Center align vertically */
+}
+
+.video-section video {
+    max-width: 85%; /* Ensure the video doesn't exceed the container's width */
+    max-height: 100%; /* Ensure the video doesn't exceed the container's height */
+    border: 3px solid #282424; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(172, 28, 28, 0.5); /* White shadow */
+    outline: none; /* Remove outline */
+    background-color: #000000; /* Black background */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and shadow */
+}
+
+.com{
+    font-size: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.video-section video:hover {
+    border-color: #ff0000; /* Red border on hover */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red shadow on hover */
+}
+.video-text{
+    font-size: 30px;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.com{
+    text-align: center;
+}
+/* E-commerce section styles */
+.ecommerce {
+    padding: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align items horizontally */
+}
+
+.ecommerce img {
+    border-top-left-radius: 20px; /* Adjusted border radius */
+    border-top-right-radius: 20px; /* Adjusted border radius */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 30px; /* Add some margin */
+    width: auto; /* Allow images to adjust their width */
+    height: 250px; /* Set a fixed height for all images */
+}
+
+.contact{
+    text-align:left;
+    font-size: 50px;
+}
+
+.c{
+    font-size: 30px;
+}
+/* CSS for page separator */
+.page-separator {
+    border: none; /* Remove default border */
+    border-top: 2px solid rgb(249, 245, 245); /* Set border style, color, and width */
+    margin: 20px 0; /* Add margin to create space between pages */
+}
+
+/* Contact section styles */
+.contact {
+    text-align: center; /* Center align all content */
+    padding: 20px;
+}
+
+@media screen and (width<800px){
+    .ecommerce{
+        flex-direction: column;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header-content{
+        flex-direction: column;
+    }
+}
+ h2{
+    text-align: center;
+    font-size: 50px;
+ }
+
+ .about{
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+ }
+
+ .background{
+    padding-left: 100%;
+    font-size: 25px;
+    padding: 30px;
+ }
